@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VENKATANARAYANA-P | Portfolio</title>
+
+    <meta name="description"
+        content="Official portfolio of VENKATANARAYANA-P, Computer Science Engineering student and developer.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         AI INTRODUCTION SCREEN
+    ========================== -->
+
+    <section id="introScreen" class="intro-screen">
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            AI SYSTEM ONLINE
+        </div>
+
+
+        <!-- PROFILE PHOTO -->
+
+        <div class="profile-container">
+
+            <div class="profile-ring">
+
+                <img
+                    src="assets/profile.jpg"
+                    alt="VENKATANARAYANA-P"
+                >
+
+            </div>
+
+            <div class="scan-line"></div>
+
+        </div>
+
+
+        <!-- INTRO CONTENT -->
+
+        <div class="intro-content">
+
+            <p class="hello">
+                HELLO, I AM
+            </p>
+
+            <h1>
+                VENKATANARAYANA-P
+            </h1>
+
+            <p class="role">
+                COMPUTER SCIENCE ENGINEERING STUDENT
+            </p>
+
+            <p id="typingText" class="typing-text"></p>
+
+
+            <!-- AI VOICE -->
+
+            <button
+                id="voiceButton"
+                class="voice-button"
+                onclick="startAIIntroduction()">
+
+                🔊 START AI INTRODUCTION
+
+            </button>
+
+
+            <!-- ENTER PORTFOLIO -->
+
+            <button
+                id="enterButton"
+                class="enter-button"
+                onclick="enterPortfolio()">
+
+                ENTER MY PORTFOLIO
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MAIN PORTFOLIO
+    ========================== -->
+
+    <main id="portfolio" class="portfolio hidden">
+
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+                VP<span>.</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section id="about" class="hero">
+
+            <div class="hero-content">
+
+                <p class="section-label">
+                    WELCOME TO MY DIGITAL SPACE
+                </p>
+
+                <h2>
+                    Hi, I'm
+                    <span>VENKATANARAYANA-P</span>
+                </h2>
+
+                <h3>
+                    CSE Student & Developer
+                </h3>
+
+                <p class="description">
+
+                    I am a Computer Science Engineering student
+                    passionate about programming, technology,
+                    software development and building real-world
+                    projects.
+
+                </p>
+
+                <a
+                    href="#projects"
+                    class="project-button">
+
+                    VIEW MY PROJECTS →
+
+                </a>
+
+            </div>
+
+
+            <!-- PROFILE PHOTO -->
+
+            <div class="hero-image">
+
+                <div class="hero-image-ring">
+
+                    <img
+                        src="assets/profile.jpg"
+                        alt="VENKATANARAYANA-P"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section">
+
+            <p class="section-label">
+                01 — ABOUT ME
+            </p>
+
+            <h2>
+                Who I Am
+            </h2>
+
+            <p class="section-text">
+
+                I am VENKATANARAYANA-P, a Computer Science
+                Engineering student interested in software
+                development, programming and emerging
+                technologies.
+
+                I enjoy learning new technologies and
+                creating projects that solve real-world
+                problems.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section id="skills" class="section">
+
+            <p class="section-label">
+                02 — SKILLS
+            </p>
+
+            <h2>
+                Technical Skills
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span>01</span>
+                    <h3>Java</h3>
+                    <p>Programming & OOP</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>02</span>
+                    <h3>Python</h3>
+                    <p>Programming & Logic</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>03</span>
+                    <h3>HTML</h3>
+                    <p>Web Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>04</span>
+                    <h3>CSS</h3>
+                    <p>UI Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>05</span>
+                    <h3>JavaScript</h3>
+                    <p>Web Interactivity</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>06</span>
+                    <h3>SQL</h3>
+                    <p>Database Management</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>07</span>
+                    <h3>Git & GitHub</h3>
+                    <p>Version Control</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>08</span>
+                    <h3>Problem Solving</h3>
+                    <p>Logical Thinking</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects" class="section">
+
+            <p class="section-label">
+                03 — PROJECTS
+            </p>
+
+            <h2>
+                My Projects
+            </h2>
+
+            <div class="projects-grid">
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        MediBot
+                    </h3>
+
+                    <p>
+                        A Java based health assistant project
+                        designed for symptom checking and
+                        reminder functionality.
+                    </p>
+
+                    <span class="technology">
+                        JAVA
+                    </span>
+
+                </article>
+
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Weather App
+                    </h3>
+
+                    <p>
+                        A weather application project created
+                        using programming and API concepts.
+                    </p>
+
+                    <span class="technology">
+                        JAVA / API
+                    </span>
+
+                </article>
+
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+                        A personal developer portfolio built
+                        using HTML, CSS and JavaScript with
+                        an AI-inspired introduction.
+                    </p>
+
+                    <span class="technology">
+                        HTML / CSS / JS
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             RESUME
+        ========================== -->
+
+        <section class="section">
+
+            <p class="section-label">
+                04 — RESUME
+            </p>
+
+            <h2>
+                My Resume
+            </h2>
+
+            <p class="section-text">
+
+                You can view my resume and learn more
+                about my education, skills and projects.
+
+            </p>
+
+            <a
+                href="assets/resume.pdf"
+                target="_blank"
+                class="project-button">
+
+                VIEW RESUME →
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <p class="section-label">
+                05 — CONTACT
+            </p>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p class="section-text">
+
+                I'm always interested in learning,
+                collaborating and building new projects.
+
+            </p>
+
+            <a
+                href="mailto:your-email@gmail.com"
+                class="email">
+
+                your-email@gmail.com
+
+            </a>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 VENKATANARAYANA-P
+            </p>
+
+            <p>
+                Built with HTML • CSS • JavaScript
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
