@@ -15,21 +15,26 @@ body {
 }
 
 
-/* =========================
-   AI INTRO SCREEN
-========================= */
+/* =====================================================
+   AI INTRO
+====================================================== */
 
 .intro-screen {
+
     min-height: 100vh;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
 
     position: relative;
+
     overflow: hidden;
 
     background:
@@ -45,11 +50,13 @@ body {
 
 
 .intro-screen::before {
+
     content: "";
 
     position: absolute;
 
     width: 650px;
+
     height: 650px;
 
     border-radius: 50%;
@@ -57,7 +64,7 @@ body {
     background:
         radial-gradient(
             circle,
-            rgba(0, 229, 255, 0.12),
+            rgba(0,229,255,0.12),
             transparent 70%
         );
 
@@ -65,11 +72,12 @@ body {
 }
 
 
-/* =========================
-   STATUS
-========================= */
+/* =====================================================
+   SYSTEM STATUS
+====================================================== */
 
 .system-status {
+
     position: absolute;
 
     top: 35px;
@@ -83,9 +91,11 @@ body {
 
 
 .status-dot {
+
     display: inline-block;
 
     width: 8px;
+
     height: 8px;
 
     margin-right: 8px;
@@ -94,9 +104,11 @@ body {
 
     background: #00ff99;
 
-    box-shadow: 0 0 15px #00ff99;
+    box-shadow:
+        0 0 15px #00ff99;
 
-    animation: blink 1s infinite;
+    animation:
+        blink 1s infinite;
 }
 
 
@@ -109,11 +121,12 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    PROFILE
-========================= */
+====================================================== */
 
 .profile-container {
+
     position: relative;
 
     margin-bottom: 30px;
@@ -121,7 +134,9 @@ body {
 
 
 .profile-ring {
+
     width: 250px;
+
     height: 250px;
 
     padding: 5px;
@@ -138,7 +153,7 @@ body {
 
     box-shadow:
         0 0 40px
-        rgba(0, 229, 255, 0.3);
+        rgba(0,229,255,0.3);
 
     animation:
         floating 4s ease-in-out infinite;
@@ -148,7 +163,9 @@ body {
 
 
 .profile-ring img {
+
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -170,15 +187,16 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    AI SCAN
-========================= */
+====================================================== */
 
 .scan-line {
 
     position: absolute;
 
     left: 5px;
+
     right: 5px;
 
     height: 2px;
@@ -200,7 +218,6 @@ body {
 
     animation:
         scanning 2s infinite;
-
 }
 
 
@@ -208,10 +225,10 @@ body {
 
     box-shadow:
         0 0 35px #00e5ff,
-        0 0 80px rgba(0, 229, 255, 0.5);
+        0 0 80px
+        rgba(0,229,255,0.5);
 
     transform: scale(1.04);
-
 }
 
 
@@ -232,9 +249,9 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    INTRO TEXT
-========================= */
+====================================================== */
 
 .hello {
 
@@ -282,9 +299,9 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    VOICE BUTTON
-========================= */
+====================================================== */
 
 .voice-button {
 
@@ -297,7 +314,7 @@ body {
         1px solid #00ff99;
 
     background:
-        rgba(0, 255, 153, 0.08);
+        rgba(0,255,153,0.08);
 
     color: #00ff99;
 
@@ -319,7 +336,7 @@ body {
 
     box-shadow:
         0 0 30px
-        rgba(0, 255, 153, 0.5);
+        rgba(0,255,153,0.5);
 }
 
 
@@ -327,23 +344,24 @@ body {
 
     animation:
         voicePulse 1s infinite;
-
 }
 
 
 @keyframes voicePulse {
 
     50% {
+
         box-shadow:
             0 0 30px #00ff99;
+
     }
 
 }
 
 
-/* =========================
+/* =====================================================
    ENTER BUTTON
-========================= */
+====================================================== */
 
 .enter-button {
 
@@ -384,9 +402,9 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    PORTFOLIO
-========================= */
+====================================================== */
 
 .hidden {
     display: none;
@@ -394,15 +412,16 @@ body {
 
 
 .portfolio {
+
     min-height: 100vh;
 
     background: #030303;
 }
 
 
-/* =========================
+/* =====================================================
    NAVBAR
-========================= */
+====================================================== */
 
 .navbar {
 
@@ -425,7 +444,7 @@ body {
     top: 0;
 
     background:
-        rgba(3, 3, 3, 0.9);
+        rgba(3,3,3,0.9);
 
     backdrop-filter:
         blur(15px);
@@ -470,9 +489,9 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    HERO
-========================= */
+====================================================== */
 
 .hero {
 
@@ -492,6 +511,7 @@ body {
 
 
 .hero-content {
+
     max-width: 650px;
 }
 
@@ -537,11 +557,14 @@ body {
 }
 
 
-/* HERO PHOTO */
+/* =====================================================
+   HERO IMAGE
+====================================================== */
 
 .hero-image-ring {
 
     width: 330px;
+
     height: 400px;
 
     padding: 4px;
@@ -560,6 +583,7 @@ body {
 .hero-image img {
 
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -570,9 +594,9 @@ body {
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+/* =====================================================
+   PROJECT BUTTON
+====================================================== */
 
 .project-button {
 
@@ -592,12 +616,70 @@ body {
     border-radius: 25px;
 
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
 
-/* =========================
+.project-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 0 25px
+        rgba(0,229,255,0.5);
+}
+
+
+/* =====================================================
+   QUICK CONTACT
+====================================================== */
+
+.quick-contact {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.quick-contact a {
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    border:
+        1px solid #222;
+
+    padding:
+        9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+.quick-contact a:hover {
+
+    color: #00e5ff;
+
+    border-color:
+        #00e5ff;
+}
+
+
+/* =====================================================
    SECTIONS
-========================= */
+====================================================== */
 
 .section {
 
@@ -628,9 +710,9 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    SKILLS
-========================= */
+====================================================== */
 
 .skills-grid {
 
@@ -688,9 +770,9 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    PROJECTS
-========================= */
+====================================================== */
 
 .projects-grid {
 
@@ -764,30 +846,114 @@ body {
 }
 
 
-/* =========================
+/* =====================================================
    CONTACT
-========================= */
+====================================================== */
 
 .contact-section {
+
     text-align: center;
 }
 
 
-.email {
+.contact-section .section-text {
 
-    display: inline-block;
+    margin-left: auto;
 
-    margin-top: 25px;
-
-    color: #00e5ff;
-
-    font-size: 18px;
+    margin-right: auto;
 }
 
 
-/* =========================
+.contact-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+    align-items: center;
+}
+
+
+.contact-item {
+
+    width: min(650px, 100%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: left;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px 22px;
+
+    background: #0b0b0b;
+
+    border:
+        1px solid #222;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+.contact-item:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #00e5ff;
+
+    box-shadow:
+        0 0 25px
+        rgba(0,229,255,0.15);
+}
+
+
+.contact-icon {
+
+    font-size: 25px;
+
+    width: 40px;
+
+    text-align: center;
+}
+
+
+.contact-item span:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.contact-item small {
+
+    color: #00e5ff;
+
+    letter-spacing: 2px;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
    FOOTER
-========================= */
+====================================================== */
 
 footer {
 
@@ -804,15 +970,16 @@ footer {
 }
 
 
-/* =========================
+/* =====================================================
    MOBILE
-========================= */
+====================================================== */
 
 @media (max-width: 750px) {
 
     .nav-links {
         display: none;
     }
+
 
     .hero {
 
@@ -821,6 +988,7 @@ footer {
         text-align: center;
     }
 
+
     .hero-image-ring {
 
         width: 280px;
@@ -828,11 +996,13 @@ footer {
         height: 340px;
     }
 
+
     .skills-grid {
 
         grid-template-columns:
             1fr 1fr;
     }
+
 
     .projects-grid {
 
@@ -840,15 +1010,24 @@ footer {
             1fr;
     }
 
+
     .profile-ring {
 
         width: 210px;
+
         height: 210px;
     }
+
 
     .intro-content h1 {
 
         font-size: 34px;
+    }
+
+
+    .quick-contact {
+
+        justify-content: center;
     }
 
 }
@@ -860,6 +1039,20 @@ footer {
 
         grid-template-columns:
             1fr;
+    }
+
+
+    .contact-item {
+
+        font-size: 13px;
+
+        padding: 15px;
+    }
+
+
+    .hero h2 {
+
+        font-size: 38px;
     }
 
 }
