@@ -1,6 +1,6 @@
-/* =====================================
+/* =====================================================
    TYPING EFFECT
-===================================== */
+====================================================== */
 
 const introText =
     "I'm a Computer Science Engineering student, developer and technology enthusiast.";
@@ -24,6 +24,7 @@ function typeIntroduction() {
 
         typingIndex++;
 
+
         setTimeout(
             typeIntroduction,
             35
@@ -40,12 +41,6 @@ window.addEventListener(
 
         typeIntroduction();
 
-        /*
-         Load browser voices.
-         Some browsers load voices
-         asynchronously.
-        */
-
         window.speechSynthesis.getVoices();
 
     }
@@ -53,9 +48,9 @@ window.addEventListener(
 
 
 
-/* =====================================
+/* =====================================================
    GET MALE VOICE
-===================================== */
+====================================================== */
 
 function getMaleVoice() {
 
@@ -81,11 +76,6 @@ function getMaleVoice() {
     );
 
 
-    /*
-       First preference:
-       Indian English male voices
-    */
-
     let maleVoice =
         voices.find(
             function (voice) {
@@ -103,11 +93,6 @@ function getMaleVoice() {
         );
 
 
-    /*
-       Second preference:
-       Any English male voice
-    */
-
     if (!maleVoice) {
 
         maleVoice =
@@ -118,7 +103,7 @@ function getMaleVoice() {
                         /en-us|en-gb|en-au|en-ca|en-in/i
                             .test(voice.lang) &&
 
-                        /male|david|mark|daniel|alex|george/i
+                        /male|david|mark|daniel|alex|george|guy|ryan/i
                             .test(voice.name)
                     );
 
@@ -127,12 +112,6 @@ function getMaleVoice() {
 
     }
 
-
-    /*
-       Third preference:
-       Try known male-sounding
-       Microsoft voices.
-    */
 
     if (!maleVoice) {
 
@@ -165,15 +144,12 @@ function getMaleVoice() {
 
 
 
-/* =====================================
-   AI VOICE INTRODUCTION
-===================================== */
+/* =====================================================
+   AI INTRODUCTION
+====================================================== */
 
 function startAIIntroduction() {
 
-    /*
-       Browser support check
-    */
 
     if (
         !("speechSynthesis" in window)
@@ -188,16 +164,8 @@ function startAIIntroduction() {
     }
 
 
-    /*
-       Stop previous speech
-    */
-
     window.speechSynthesis.cancel();
 
-
-    /*
-       Introduction
-    */
 
     const introduction =
 
@@ -205,36 +173,38 @@ function startAIIntroduction() {
 
         "I am Venkata Narayana P. " +
 
-        "I am a Computer Science Engineering student. " +
+        "I am a Computer Science Engineering student " +
 
-        "I am passionate about programming, technology, " +
+        "and a technology enthusiast. " +
+
+        "I am passionate about programming, " +
 
         "software development and building real world projects. " +
 
-        "I am currently developing my skills in Java, Python, " +
+        "I am developing my skills in Java, Python, " +
 
-        "web development and software development. " +
+        "HTML, CSS, JavaScript and SQL. " +
 
-        "I enjoy learning new technologies and creating useful projects. " +
+        "I enjoy learning new technologies " +
 
-        "Thank you for visiting my portfolio. " +
+        "and solving problems through technology. " +
 
-        "Let me show you my work.";
+        "You can explore my skills and projects " +
 
+        "through this portfolio. " +
 
-    /*
-       Create speech
-    */
+        "You can also connect with me through my GitHub, " +
+
+        "email or phone. " +
+
+        "Thank you for visiting my portfolio.";
+
 
     const speech =
         new SpeechSynthesisUtterance(
             introduction
         );
 
-
-    /*
-       Voice settings
-    */
 
     speech.rate = 0.82;
 
@@ -244,10 +214,6 @@ function startAIIntroduction() {
 
     speech.lang = "en-IN";
 
-
-    /*
-       Find male voice
-    */
 
     const maleVoice =
         getMaleVoice();
@@ -262,33 +228,22 @@ function startAIIntroduction() {
             maleVoice.lang;
 
         console.log(
-            "SELECTED MALE VOICE:",
-            maleVoice.name,
-            maleVoice.lang
-        );
-
-    } else {
-
-        /*
-           If browser doesn't have
-           male voice, use English
-           voice with deeper pitch.
-        */
-
-        console.log(
-            "No male voice found in browser."
+            "Selected male voice:",
+            maleVoice.name
         );
 
     }
 
 
-    /*
-       AI animation
-    */
-
     const introScreen =
         document.getElementById(
             "introScreen"
+        );
+
+
+    const voiceButton =
+        document.getElementById(
+            "voiceButton"
         );
 
 
@@ -297,40 +252,12 @@ function startAIIntroduction() {
     );
 
 
-    /*
-       Button
-    */
-
-    const voiceButton =
-        document.getElementById(
-            "voiceButton"
-        );
-
-
     voiceButton.textContent =
         "🔊 AI MALE VOICE SPEAKING...";
 
 
     voiceButton.disabled = true;
 
-
-    /*
-       Voice started
-    */
-
-    speech.onstart =
-        function () {
-
-            console.log(
-                "Male AI voice started."
-            );
-
-        };
-
-
-    /*
-       Voice finished
-    */
 
     speech.onend =
         function () {
@@ -349,10 +276,6 @@ function startAIIntroduction() {
 
         };
 
-
-    /*
-       Error
-    */
 
     speech.onerror =
         function (event) {
@@ -378,10 +301,6 @@ function startAIIntroduction() {
         };
 
 
-    /*
-       Start speaking
-    */
-
     window.speechSynthesis.speak(
         speech
     );
@@ -390,9 +309,9 @@ function startAIIntroduction() {
 
 
 
-/* =====================================
+/* =====================================================
    ENTER PORTFOLIO
-===================================== */
+====================================================== */
 
 function enterPortfolio() {
 
@@ -408,16 +327,8 @@ function enterPortfolio() {
         );
 
 
-    /*
-       Stop voice when leaving intro
-    */
-
     window.speechSynthesis.cancel();
 
-
-    /*
-       Fade intro
-    */
 
     introScreen.style.opacity =
         "0";
